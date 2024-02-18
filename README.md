@@ -10,3 +10,5 @@ palheta de cores: https://flatcolors.net/palette/487-in-the-flat
 palheta de cores 2:https://flatcolors.net/palette/948-retro-70s
 
 site para criar codigos de barras: https://barcode.tec-it.com/en/Code128?data=teste
+# Caso você queira conferir
+https://pedrohaos.github.io/lista_de_compras_com_leitor_de_codigo_de_barras/
