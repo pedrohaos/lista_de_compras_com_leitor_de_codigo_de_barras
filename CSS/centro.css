@@ -1,0 +1,29 @@
+.centro{
+    background-color: var(--amarelo);
+    margin: 40px 0px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    text-align: center;
+    font-size: 24px;
+    color: var(--marrom);
+}
+
+.item__quantia{
+    border-top: 0.5px solid var(--branco);
+    border-bottom: 0.5px solid var(--branco);
+}
+
+.item__nome{
+    border-top: 0.5px solid var(--branco);
+    border-bottom: 0.5px solid var(--branco);
+    border-right: 2px solid var(--branco);
+    border-left: 2px solid var(--branco);
+}
+
+.item__preco{
+    border-top: 0.5px solid var(--branco);
+    border-bottom: 0.5px solid var(--branco);
+}

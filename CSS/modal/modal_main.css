@@ -1,0 +1,61 @@
+@import url('./modal_inputs.css');
+@import url('./modal_quantidade.css');
+@import url('./modal_botoes.css');
+
+.modal{
+    display: none;
+    /* ---Largura & Altura--- */
+    width: 360px;
+    height: 692px;
+    /* ---Cor de Fundo--- */
+    background-color: var(--branco);
+    /* ---Borda--- */
+    border-radius: 20px;
+    /* ---Posicionamento--- */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* ---Espaçamento Externo--- */
+    margin: auto auto;
+}
+
+.__block{
+    display: block;
+}
+
+.scanner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 15px 0px 15px; */
+}
+
+.resultado{
+    font-size: 20px;
+    background-color: white;
+    padding: 1em 0 1em 0;
+    margin: 24px 24px 24px 24px;
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+    /* ---Tipografia--- */
+    text-align: center;
+    font-size: 24px;
+    color: var(--marrom);
+}
+
+.modal__input_2{
+    font-size: 20px;
+    background-color: white;
+    padding: 1em 0 1em 0;
+    margin: 24px 24px 24px 24px;
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+    /* ---Tipografia--- */
+    text-align: center;
+    font-size: 24px;
+    color: var(--marrom);
+}

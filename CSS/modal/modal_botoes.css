@@ -1,0 +1,43 @@
+.modal__botoes{
+    /* ---Display Grid--- */
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 24px;
+    /* ---Espaçamento Externo--- */
+    margin: 0px 24px 48px 24px;
+}
+
+.modal__botoes__finalizacao{
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+    /* ---Tipografia--- */
+    text-align: center;
+    font-size: 48px;
+    color: var(--branco);
+}
+
+.concluido{
+    /* ---Cor de Fundo--- */
+    background-color: var(--verde);
+}
+
+.cancelar{
+    /* ---Cor de Fundo--- */
+    background-color: var(--laranja);
+}
+
+.header__modal{
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 6px;
+}
+
+.fechar__leitor{
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    border: none;
+    color: var(--laranja);
+}

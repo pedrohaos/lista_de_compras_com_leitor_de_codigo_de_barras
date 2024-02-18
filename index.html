@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* In order to place the tracking correctly */
+        canvas.drawing, canvas.drawingBuffer {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="https://kit.fontawesome.com/f97670fe4a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <title>App de Lista de compras</title>
+</head>
+<body class="corpo">
+    <main class="centro">
+        <header class="botoes">
+            <button class="botao botao__add" id="botaoAddManual">Adicionar de forma manual</button>
+            <button class="botao botao__leitura" id="botaoLerCodigoDeBarras">Ler código de barras</button>
+        </header>
+        <ul class="lista" id="lista">
+        </ul>   
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal__inputs">
+            <input type="text" placeholder="item" id="inputItem" class="modal__input">
+            <input type="text" placeholder="0.00" id="inputPreco" class="modal__input">
+        </div>
+        <div class="modal__quantidade">
+            <button id="mais" class="modal__quantidade__mais">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <output id="saida" class="modal__quantidade__mostra">1x</output>
+            <button id="menos" class="modal__quantidade__menos" disabled>
+                <i class="fa-solid fa-minus"></i>
+            </button>
+        </div>
+        <div class="modal__botoes">
+            <button id="concluido" class="modal__botoes__finalizacao concluido"><i class="fa-solid fa-check"></i></button>
+            <button id="cancelar" class="modal__botoes__finalizacao cancelar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+    <div class="modal" id="modal_2">
+        <div class="header__modal">
+            <button class="fechar__leitor" id="fechar__leitor">x</button>
+        </div>
+        <div class="scanner-container" id="scanner-container"></div>
+        <div class="resultado" id="resultado"></div>
+        <input type="text" placeholder="0.00" id="inputPreco" class="modal__input_2">
+        <div class="modal__quantidade">
+            <button id="mais" class="modal__quantidade__mais">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <output id="saida" class="modal__quantidade__mostra">1x</output>
+            <button id="menos" class="modal__quantidade__menos" disabled>
+                <i class="fa-solid fa-minus"></i>
+            </button>
+        </div>
+        <div class="modal__botoes">
+            <button id="concluido" class="modal__botoes__finalizacao concluido"><i class="fa-solid fa-check"></i></button>
+        </div>
+    </div>
+    <footer class="rodape">
+        <p id="QuantidadeItens"></p>
+        <p id="valorTotal"></p>
+    </footer>
+
+    <script type="text/javascript" src="./js/chama__Modal.js"></script>
+    <script type="text/javascript" src="./js/inputs__Modal.js"></script>
+    <script type="text/javascript" src="./js/quantidade__Modal.js"></script>
+    <script type="text/javascript" src="./js/total__lista.js"></script>
+    <script src="./js/quagga.min.js"></script>
+    <script src="./js/leitor_De_Barras.js"></script>
+
+</body>
+</html>

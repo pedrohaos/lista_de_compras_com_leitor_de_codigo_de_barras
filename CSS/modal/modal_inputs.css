@@ -1,0 +1,31 @@
+.modal__inputs{
+    /* ---Display Grid--- */
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 24px;
+    /* ---Espaçamento Externo--- */
+    margin: 48px 24px 24px 24px;
+}
+.modal__input{
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+    /* ---Tipografia--- */
+    text-align: center;
+    font-size: 24px;
+    color: var(--marrom);
+}
+
+.modal__input::placeholder{
+    /* ---Tipografia--- */
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--marrom);
+    /* ---Posição do Placeholder--- */
+    position: absolute;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}

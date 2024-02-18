@@ -1,0 +1,21 @@
+.botoes{
+  padding:48px 0px;
+  border-bottom: 0.5px solid var(--branco);
+  display: flex;
+  justify-content: space-around;
+}
+
+.botao{
+    /* ---Cor de fundo & da Letra--- */
+    background-color: var(--marrom);
+    color: white;
+    /* ---Altura & Largura--- */
+    width: 167px;
+    height: 155px;
+    /* ---Tamanho & Espessura--- */
+    font-size: 32px;
+    font-weight: bold;
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+}

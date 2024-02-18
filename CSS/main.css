@@ -1,0 +1,17 @@
+@import url('./reset.css');
+@import url('./centro.css');
+@import url('./cabecario.css');
+@import url('./modal/modal_main.css');
+@import url('./rodape.css');
+
+:root{
+    --branco: #FCEBB6;
+    --marrom: #5E412F;
+    --laranja: #F07818;
+    --verde: #78C0A8;
+    --amarelo: #F0A830;
+}
+.corpo{
+    font-family: Arial;
+    background-color: var(--branco);
+}

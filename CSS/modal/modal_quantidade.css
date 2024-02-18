@@ -1,0 +1,49 @@
+.modal__quantidade{
+    /* ---Display Grid--- */
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    /* ---Espaçamento Externo--- */
+    margin: 0 24px 24px 24px;
+}
+
+.modal__quantidade__mostra{
+    /* ---Tipografia--- */
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--marrom);
+    /* ---Espaçamento Interno--- */
+    padding: 25px 0 25px 0;
+}
+
+.modal__quantidade__mais{
+    /* ---Cor de Fundo--- */
+    background-color: var(--verde);
+    /* ---Tipografia--- */
+    color: var(--branco);
+    font-size: 48px;
+    /* ---Espaçamento Interno--- */
+    padding: none;
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+}
+
+.modal__quantidade__menos{
+    /* ---Cor de Fundo--- */
+    background-color: var(--laranja);
+    /* ---Tipografia--- */
+    color: var(--branco);
+    font-size: 48px;
+    /* ---Espaçamento Interno--- */
+    padding: none;
+    /* ---Borda--- */
+    border: none;
+    border-radius: 20px;
+}
+
+.modal__quantidade__menos:disabled{
+    background-color: #ccc;
+}
